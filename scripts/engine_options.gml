@@ -16,8 +16,8 @@ global.menuMode = 1;                //Sets whether to use a warp room or a menu 
 global.menuSound = sndJump;         //Sets what sound to use for navigating the main menu
 
 //World
-global.startRoom = rSample;         //Sets which room to begin with
-global.roomCaptionDef = "YoYoYo Engine Verve Edition";  //Sets default window caption (only works with the Professional version of Studio)
+global.startRoom = rm1;         //Sets which room to begin with
+global.roomCaptionDef = "SecretSanta2025";  //Sets default window caption (only works with the Professional version of Studio)
 global.deathMusicMode = 0;          //Sets whether or not to play death music when the player dies (0 = no death music, 1 = instantly pause current music, 2 = fade out current music)
 global.pauseDelayLength = 40;       //Sets the delay in frames in which the player can pause/unpause the game (can be set to 0 to disable pause delay)
 global.timeWhenDead = true;         //Sets whether or not to count the in-game timer when the player is dead
@@ -42,12 +42,10 @@ global.controllerEnabled = true;    //Sets whether controllers are supported
 global.controllerDelayLength = 5;   //Sets the delay in frames in which the player can switch between keyboard/controller (can be set to 0 to disable delay)
 
 //Difficulty
-global.difficultyCount = 4;
+global.difficultyCount = 2;
 global.difficultyNames[0] = "Load Game";
-global.difficultyNames[1] = "Medium";
-global.difficultyNames[2] = "Hard";
-global.difficultyNames[3] = "Very Hard";
-global.difficultyNames[4] = "Impossible";
+global.difficultyNames[1] = "Bow";
+global.difficultyNames[2] = "No Bow";
 
 //Savefiles
 global.md5StrAdd = "Put something here"; //sets what to add to the end of md5 input string to make the save harder to mess with, can be changed to anything, should be set to something unique and hard to predict (like setting a password)

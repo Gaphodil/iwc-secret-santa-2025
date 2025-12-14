@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>with (objBlock) {visible = true; image_alpha = 0.3}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -112,10 +112,17 @@
     <instance objName="objJumpRefresher" x="624" y="624" name="inst_F691C647" locked="0" code="with (make_trigger(&quot;1-top&quot;))&#xA;    trg_move_to(624,432,3,EASE.OUT)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objJumpRefresher" x="624" y="656" name="inst_E8A8B082" locked="0" code="with (make_trigger(&quot;1-top&quot;))&#xA;    trg_move_to(624,512,3,EASE.OUT)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTrigger" x="336" y="368" name="inst_3F6E240C" locked="0" code="trg=&quot;1-water&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTrigger" x="256" y="544" name="inst_E850BD2A" locked="0" code="trg=&quot;1-all&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTrigger" x="336" y="128" name="inst_E51B8E5C" locked="0" code="trg=&quot;1-top&quot;&#xA;sound = sndBlockChange&#xA;destroy = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="272" y="448" name="inst_381FFE7B" locked="0" code="y -= 16*3&#xA;depth += 1&#xA;with (make_trigger(&quot;1-water&quot;)) {&#xA;    trg_move_to(0, 48, 16*3/50, EASE.OUT, true)&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFunnyWater" x="336" y="368" name="inst_51FFBE0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="160" y="544" name="inst_E65A1AA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="224" y="544" name="inst_AACA50D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTrigger" x="192" y="560" name="inst_3B2EFE28" locked="0" code="trg = &quot;2-plat2&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTrigger" x="192" y="543" name="inst_17D43B36" locked="0" code="trg = &quot;2-plat&quot;&#xA;" scaleX="1" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="objFunnyPlatform" x="192" y="544" name="inst_02DB95A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="192" y="544" name="inst_2771B6F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFunnyButton" x="192" y="544" name="inst_0E25188B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDestroyAll" x="128" y="608" name="inst_D2303F9D" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
