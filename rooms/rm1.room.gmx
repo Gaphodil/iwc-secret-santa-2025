@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objPlayerStart" x="64" y="0" name="inst_13D9482A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="64" y="-11" name="inst_13D9482A" locked="0" code="init_vspeed = &quot;max&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="-32" name="inst_B42D7CC0" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="0" name="inst_E9D4FE9E" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="384" name="inst_CBA68733" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
@@ -112,7 +112,7 @@
     <instance objName="objJumpRefresher" x="624" y="624" name="inst_F691C647" locked="0" code="with (make_trigger(&quot;1-top&quot;))&#xA;    trg_move_to(624,432,3,EASE.OUT)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objJumpRefresher" x="624" y="656" name="inst_E8A8B082" locked="0" code="with (make_trigger(&quot;1-top&quot;))&#xA;    trg_move_to(624,512,3,EASE.OUT)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTrigger" x="336" y="368" name="inst_3F6E240C" locked="0" code="trg=&quot;1-water&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTrigger" x="336" y="128" name="inst_E51B8E5C" locked="0" code="trg=&quot;1-top&quot;&#xA;sound = sndBlockChange&#xA;destroy = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTrigger" x="336" y="128" name="inst_E51B8E5C" locked="0" code="trg=&quot;1-top&quot;&#xA;sound = sndBlockChange&#xA;destroy = true&#xA;&#xA;visible = true;&#xA;with (make_trigger(&quot;1-top&quot;)) trg_fade(&quot;out&quot;)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="272" y="448" name="inst_381FFE7B" locked="0" code="y -= 16*3&#xA;depth += 1&#xA;with (make_trigger(&quot;1-water&quot;)) {&#xA;    trg_move_to(0, 48, 16*3/50, EASE.OUT, true)&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFunnyWater" x="336" y="368" name="inst_51FFBE0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="160" y="544" name="inst_E65A1AA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -123,6 +123,41 @@
     <instance objName="objBlock" x="192" y="544" name="inst_2771B6F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFunnyButton" x="192" y="544" name="inst_0E25188B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDestroyAll" x="128" y="608" name="inst_D2303F9D" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="192" y="448" name="inst_B7AE74C3" locked="0" code="with (make_trigger(&quot;2-plat&quot;)) trg_move_to(-32,0,3,EASE.INOUT,true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="224" y="448" name="inst_7902A528" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniRight" x="192" y="432" name="inst_09C99E1F" locked="0" code="with (make_trigger(&quot;2-plat&quot;)) trg_move_to(-32,-16,3,EASE.INOUT,true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="192" y="128" name="inst_48B67CD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="160" y="288" name="inst_96DEC58C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="160" y="0" name="inst_1563F944" locked="0" code="with (make_trigger(&quot;2-3spikes&quot;)) trg_move(1,0)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="160" y="32" name="inst_520072AE" locked="0" code="with (make_trigger(&quot;2-3spikes&quot;)) trg_move(1,0)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="160" y="64" name="inst_2DC694C1" locked="0" code="with (make_trigger(&quot;2-3spikes&quot;)) trg_move(1,0)" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="192" y="160" name="inst_9BEEBC93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="224" y="192" name="inst_9F313BEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="272" y="128" name="inst_5DBE7379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="400" y="128" name="inst_A314B1F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTrigger" x="256" y="0" name="inst_F92F5451" locked="0" code="trg = &quot;2-3spikes&quot;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="416" y="0" name="inst_58D7D1D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="448" y="64" name="inst_23F7D696" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="480" y="64" name="inst_AE567AD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="240" y="64" name="inst_7C35B8A7" locked="0" code="with (make_trigger(&quot;2-blocker&quot;)) trg_move_to(16,-48,4,EASE.INOUT,true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="240" y="0" name="inst_0674B391" locked="0" code="with (make_trigger(&quot;2-blocker&quot;)) trg_move_to(16,-48,4,EASE.INOUT,true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="32" y="640" name="inst_E9463861" locked="0" code="with (make_trigger(&quot;2-plat2&quot;)) trg_move_to(0,-7*32,6,EASE.OUT,true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="64" y="640" name="inst_A7ECE5AC" locked="0" code="with (make_trigger(&quot;2-plat2&quot;)) trg_move_to(0,-7*32,6,EASE.OUT,true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="96" y="640" name="inst_71C35369" locked="0" code="with (make_trigger(&quot;2-plat2&quot;)) trg_move_to(0,-7*32,6,EASE.OUT,true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="128" y="640" name="inst_C6ADDED9" locked="0" code="with (make_trigger(&quot;2-plat2&quot;)) trg_move_to(0,-7*32,6,EASE.OUT,true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="256" y="304" name="inst_E843803F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="272" y="304" name="inst_979CBBFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="304" y="80" name="inst_B3AF3FEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="368" y="32" name="inst_78DF7C7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="352" y="64" name="inst_124E2860" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="384" y="64" name="inst_261386BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="320" y="16" name="inst_A108227A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="320" y="0" name="inst_4AE06031" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="320" y="32" name="inst_9470D94B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFunnyShooter" x="192" y="-32" name="inst_21FB50CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTrigger" x="224" y="160" name="inst_DF8593B8" locked="0" code="trg = &quot;2-blocker&quot;&#xA;&#xA;visible = true;&#xA;with (make_trigger(&quot;2-blocker&quot;)) trg_fade(&quot;out&quot;)" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="208" y="32" name="inst_AB17D0D8" locked="0" code="with (make_trigger(&quot;2-blocker&quot;)) trg_move_to(16,-48,4,EASE.INOUT,true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="160" y="224" name="inst_A0E0810B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

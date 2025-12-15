@@ -77,6 +77,7 @@ event_user(1);
           <argument>
             <kind>1</kind>
             <string>instance_change(objFunnyPlatform2, true);
+audio_play_sound(sndBossHit,0,false);
 with (objFunnyButton) active = true;
 with (inst_2771B6F7) instance_change(objFunnyBlock, true);
 
