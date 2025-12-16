@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprKillerBlock</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>with (instance_place(x, y, objMiniUp)) instance_destroy();
 with (instance_place(x, y, objMiniDown)) instance_destroy();
-with (instance_place(x, y, objJumpRefresher)) instance_destroy();
+with (instance_place(x, y, objWater3)) instance_destroy();
 
 </string>
           </argument>
