@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>frozen = false; //Sets if the player can move or not
+cutscene = false;
 
 inputHandler = objWorld.manualInput;
 

@@ -9,6 +9,8 @@ switch (room)
     case rOptions:
     case rDifficultySelect:
     case rSample:                                                                                                            
+    case rTest1:
+    case rTest2:
         return "GuyRock";
         
     case rCherryBoss:
