@@ -75,11 +75,8 @@ savedata_save(true);
 // resume music
 audio_resume_sound(global.currentMusic);
 
-// unhide player and tp up 304 px
-with (objPlayer) {
-    y = (y+304) mod 608;
-    visible = true;
-}
+// unhide player
+with (objPlayer) visible = true;
 with (objBow) visible = true;
 
 surface_free(surf1);
@@ -185,6 +182,8 @@ spr1 = sprite_create_from_surface(
 )
 // do goto - does not happen until end of frame!
 room_goto_next();
+// move player
+with (objPlayer) y = (y+304) mod 608;
 frame++;
 </string>
           </argument>

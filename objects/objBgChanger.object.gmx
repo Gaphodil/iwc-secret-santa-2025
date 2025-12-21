@@ -30,6 +30,8 @@ dur = 75;
 b1 = bRm1_1;
 b2 = bRm1_2;
 cur = b1;
+
+active = true;
 </string>
           </argument>
         </arguments>
@@ -52,7 +54,8 @@ cur = b1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>t++;
+            <string>if (not active) exit;
+t++;
 if (t == dur) {
     event_user(0);
     t = 0;
@@ -105,8 +108,13 @@ background_index[0] = cur;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room != rm1) instance_destroy();
-else if (cur == b2) background_index[0] = cur;
+            <string>switch (room) {
+    case rm1: {b1 = bRm1_1; b2 = bRm1_2; break;}
+    case rm2: {b1 = bRm2_1; b2 = bRm2_2; break;}
+    case rm3: {b1 = bRm3_1; b2 = bRm3_2; break;}
+    default: {instance_destroy(); exit;}
+}
+if (cur == b2) background_index[0] = cur;
 </string>
           </argument>
         </arguments>

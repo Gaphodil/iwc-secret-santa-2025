@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>with (objBlock) {visible = true; image_alpha = 0.3}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -31,7 +31,7 @@
     <yoffset>11010215</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bRm3_1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -56,6 +56,8 @@
     <instance objName="objScreenWrapX" x="768" y="-32" name="inst_DE6075B2" locked="0" code="" scaleX="2" scaleY="21" colour="4294967295" rotation="0"/>
     <instance objName="objScreenWrapY" x="-32" y="-32" name="inst_2F465B84" locked="0" code="" scaleX="27" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objScreenWrapY" x="-32" y="576" name="inst_C074ECCA" locked="0" code="" scaleX="27" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenQuarter" x="-64" y="0" name="inst_E38ACEF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBgChanger" x="-64" y="-32" name="inst_18AEDC0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

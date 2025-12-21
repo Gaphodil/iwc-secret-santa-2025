@@ -31,7 +31,7 @@
     <yoffset>11010215</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bRm2_1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,9 +51,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objPlayerStart" x="768" y="80" name="inst_13D9482A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="768" y="48" name="inst_13D9482A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="-32" name="inst_E1388C80" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="768" y="112" name="inst_89693DFA" locked="0" code="" scaleX="1" scaleY="14.5" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="768" y="80" name="inst_89693DFA" locked="0" code="" scaleX="1" scaleY="14.5" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="208" y="144" name="inst_5162EC69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="304" y="336" name="inst_65A100D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="336" y="464" name="inst_C25763F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -80,7 +80,7 @@
     <instance objName="objSpikeUp" x="688" y="128" name="inst_D21C0832" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="736" y="144" name="inst_157D8A1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="720" y="160" name="inst_382354C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSave" x="768" y="80" name="inst_24F9034C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSave" x="768" y="48" name="inst_24F9034C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="804" y="-16" name="inst_4BC87729" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="640" y="176" name="inst_EC80C5CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="624" y="208" name="inst_E49A77A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -94,9 +94,10 @@
     <instance objName="objSpikeDown" x="656" y="288" name="inst_09E796A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="624" y="288" name="inst_45EA9267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="688" y="272" name="inst_6189A2F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objScreenHalver" x="864" y="64" name="inst_C663DBA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenHalver" x="-32" y="0" name="inst_C663DBA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenWrapY" x="0" y="-32" name="inst_94AB171D" locked="0" code="" scaleX="25" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objScreenWrapY" x="0" y="576" name="inst_9D8B3910" locked="0" code="" scaleX="25" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBgChanger" x="-32" y="-32" name="inst_13BAF110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
