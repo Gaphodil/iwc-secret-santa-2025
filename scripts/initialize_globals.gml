@@ -29,6 +29,8 @@ global.autosave = false;        //Used to autosave the next time the player is c
 global.noDeath = false;
 global.infJump = false;
 
+global.noRestart = false;
+
 global.gamePaused = false;
 global.pauseSurf = -1;          //Stores the screen surface when the game is paused
 global.pauseDelay = 0;          //Sets pause delay so that the player can't quickly pause buffer

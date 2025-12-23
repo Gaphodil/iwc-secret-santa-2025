@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (not instance_exists(objTrans1To2)) event_user(0);
+            <string>if (not instance_exists(objTrans2To3)) event_user(0);
 </string>
           </argument>
         </arguments>
