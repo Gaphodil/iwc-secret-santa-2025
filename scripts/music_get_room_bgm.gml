@@ -4,22 +4,18 @@
 
 switch (room)
 {
-    case rTitle:            //Add rooms here, if you have several rooms that play the same song they can be put together
+    case rTitle:
     case rMenu:
     case rOptions:
     case rDifficultySelect:
-    case rSample:                                                                                                            
-    case rTest1:
-    case rTest2:
-        return "GuyRock";
-        
-    case rCherryBoss:
-        return "Megaman";
-        
-    case rMiku:
-        return -2;          //Don't change the music in any way (the Miku object plays it)
-        
-    case rEnd:
+    case rmClear:
+        return "Fireplace";
+
+    case rm1:
+    case rm2:
+    case rm3:
+        return "Forest";
+
     default:
         return -1;          //Play nothing
 }

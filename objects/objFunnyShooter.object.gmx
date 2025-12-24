@@ -29,6 +29,7 @@
     trg_sound(sndBlockChange);
     trg_user(0);
 }
+with (make_trigger("2-3spikes")) trg_fade("out", 1);
 
 type = 0;
 </string>
