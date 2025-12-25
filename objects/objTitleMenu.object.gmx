@@ -53,6 +53,10 @@ if (input_check_pressed(KEY.MENU_ACCEPT))
           <argument>
             <kind>1</kind>
             <string>///Draw debug mode text when we're on the title screen
+draw_set_font(fDefault18);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text_outline(400, 152, "an evening stroll", c_black, c_white);
 
 if (global.debugMode)
 {

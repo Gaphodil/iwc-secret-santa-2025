@@ -527,6 +527,8 @@ roomSpeed = gameSpeed;
 
 manualInput = instance_create(0, 0, objManualInputHandler);
 
+instance_create(0,0,objBgChanger);
+
 room_goto_next();
 </string>
           </argument>

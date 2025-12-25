@@ -5,6 +5,8 @@
 
 var optionsText = argument0;
 
+draw_set_color(c_white);
+
 var backButton;
 var acceptButton;
 var optionsButton;

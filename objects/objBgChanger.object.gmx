@@ -25,10 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>t = 0;
-dur = 50 * 60 / 65; // fps * (60/bpm)
-b1 = bRm1_1;
-b2 = bRm1_2;
+            <string>if (instance_number(object_index) &gt; 1) instance_destroy();
+t = 0;
+dur = 50 * 60 / 55; // fps * (60/bpm)
+b1 = bT1;
+b2 = bT2;
 cur = b1;
 
 active = true;
@@ -109,12 +110,18 @@ background_index[0] = cur;
           <argument>
             <kind>1</kind>
             <string>switch (room) {
+    case rTitle:
+    case rMenu:
+    case rOptions:
+    case rDifficultySelect: {b1 = bT1; b2 = bT2; break;}
     case rm1: {b1 = bRm1_1; b2 = bRm1_2; break;}
     case rm2: {b1 = bRm2_1; b2 = bRm2_2; break;}
     case rm3: {b1 = bRm3_1; b2 = bRm3_2; break;}
-    default: {instance_destroy(); exit;}
+    case rmClear: {b1 = bC1; b2 = bC2; break;}
 }
-if (cur == b2) background_index[0] = cur;
+if not (cur == b1 or cur == b2)
+    event_user(0);
+if (background_index[0] != cur) background_index[0] = cur;
 </string>
           </argument>
         </arguments>
