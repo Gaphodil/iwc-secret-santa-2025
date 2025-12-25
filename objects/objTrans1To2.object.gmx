@@ -46,6 +46,8 @@ x_end = 2400;
 // on frame two: save appsurf, init roomchange, draw psurf
 // on frame three: save appsurf, draw room1+psurf
 frame = -1;
+
+psnd_id = -1;
 </string>
           </argument>
         </arguments>
@@ -88,6 +90,13 @@ sprite_delete(spr2);
 sprite_delete(sprp);
 
 with (objScreenHalver) event_user(0);
+
+// stop sound
+audio_stop_sound(psnd_id);
+
+// create play fx
+instance_create(0,0,objPlay);
+audio_play_sound(sndPlay, 0, false);
 </string>
           </argument>
         </arguments>
@@ -125,6 +134,11 @@ if (start) {
         draw_x = x_init + ev * (x_end - x_init)
         if (t == dur) instance_destroy();
     }
+    if (t mod 8 and audio_is_playing(psnd_id)
+        and audio_sound_get_track_position(psnd_id) &gt; 150)
+    {
+        audio_sound_set_track_position(psnd_id, 20);
+    }
 }
 </string>
           </argument>
@@ -154,6 +168,8 @@ spr2 = sprite_create_from_surface(
     false, false, 0,0,
 )
 frame++;
+instance_create(0,0,objPause);
+psnd_id = audio_play_sound(sndPause, 0, false);
 </string>
           </argument>
         </arguments>

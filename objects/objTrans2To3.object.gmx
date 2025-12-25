@@ -48,6 +48,8 @@ y_end = 608*11;
 // on frame two: save appsurf, init roomchange, draw psurf
 // on frame three: save appsurf, draw room1+psurf
 frame = -1;
+
+psnd_id = -1;
 </string>
           </argument>
         </arguments>
@@ -94,6 +96,13 @@ sprite_delete(sprp);
 file_delete("Data\temp" + string(global.savenum) + ".png");
 
 with (objScreenQuarter) event_user(0);
+
+// stop sound
+audio_stop_sound(psnd_id);
+
+// create play fx
+instance_create(0,0,objPlay);
+audio_play_sound(sndPlay, 0, false);
 </string>
           </argument>
         </arguments>
@@ -155,6 +164,11 @@ if (start) {
         draw_y = y_init + ev * (y_end - y_init)
         if (t == dur) instance_destroy();
     }
+    if (t mod 8 and audio_is_playing(psnd_id)
+        and audio_sound_get_track_position(psnd_id) &gt; 150)
+    {
+        audio_sound_set_track_position(psnd_id, 20);
+    }
 }
 </string>
           </argument>
@@ -188,6 +202,9 @@ frame++;
 // fake the old frame again
 draw_sprite(spr1, 0, 0, -304);
 draw_sprite(spr1, 0, 0,  304);
+
+instance_create(0,0,objPause);
+psnd_id = audio_play_sound(sndPause, 0, false);
 </string>
           </argument>
         </arguments>
