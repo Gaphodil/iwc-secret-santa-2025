@@ -8,17 +8,23 @@ Engine: [my fork of YoYoYo-Verve](https://github.com/Gaphodil/studio-verve-tidbi
 
 <details>
 <summary>Music</summary>
+
 https://www.youtube.com/watch?v=BXDIbnVnzq0
 https://www.youtube.com/watch?v=v5iP067TAC0
+
 </details>
 
 <details>
 <summary>SFX</summary>
+
 https://pixabay.com/sound-effects/tape-player-sounds-90780/
+
 </details>
 
 <details>
 <summary>Images</summary>
+
 [A Place Without Bodies Volume 2](https://spacetwinks.itch.io/a-place-without-bodies-volume-2)
+
 </details>
 
