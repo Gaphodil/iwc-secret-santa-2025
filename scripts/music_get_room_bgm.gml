@@ -7,7 +7,7 @@ switch (room)
     case rTitle:
     case rMenu:
     case rOptions:
-    case rDifficultySelect:
+    // case rDifficultySelect:
     case rmClear:
         return "Fireplace";
 

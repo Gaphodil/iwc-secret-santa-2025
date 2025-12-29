@@ -3,7 +3,7 @@
 if (global.menuMode == 0)   //Difficulty select room
 {
     global.savenum = savefileSelect+1;
-    room_goto(rDifficultySelect);
+    // room_goto(rDifficultySelect);
 }
 else    //Difficulty select menu
 {

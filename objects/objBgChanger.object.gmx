@@ -112,8 +112,7 @@ background_index[0] = cur;
             <string>switch (room) {
     case rTitle:
     case rMenu:
-    case rOptions:
-    case rDifficultySelect: {b1 = bT1; b2 = bT2; break;}
+    case rOptions: {b1 = bT1; b2 = bT2; break;}
     case rm1: {b1 = bRm1_1; b2 = bRm1_2; break;}
     case rm2: {b1 = bRm2_1; b2 = bRm2_2; break;}
     case rm3: {b1 = bRm3_1; b2 = bRm3_2; break;}
